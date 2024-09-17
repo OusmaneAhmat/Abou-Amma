@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Agricole - Accueil</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #38b6ff; /* Bleu adapté à partir du design */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navigation nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        .hero-header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero-header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Modifications pour centrer et réduire la section */
+        .design-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 75%; /* Réduire la largeur à 60% */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .design-section img {
+            width: 100%; /* S'adapte à la largeur de la section */
+            height: 20%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+
+                /* Conteneur des images */
+                .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Espacement entre les images */
+            margin-top: 20px;
+        }
+
+
+
+         /* Style pour les images pour qu'elles aient la même taille */
+         .image-container img {
+            width: 200px; /* Largeur fixe pour toutes les images */
+            height: 200px; /* Hauteur fixe pour toutes les images */
+            object-fit: cover; /* Recadre les images pour garder la même taille sans déformer */
+            border-radius: 10px; /* Ajout d'un effet arrondi si tu le souhaites */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet esthétique */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navigation">
+            <nav><a href="index.html">ACCUEIL</a></nav>
+            <nav><a href="produit.html">PRODUITS</a></nav>
+            <nav><a href="contact.html">CONTACT</a></nav>
+        </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="hero-header">
+    </section>
+
+    <!-- Section pour ton design, centrée et réduite -->
+    <section class="design-section">
+      <img src="images/zenith agricol.png" alt="zenith">
+    </section>
+    <H2>Découvrir L'équipe</H2>
+      <!-- Conteneur des images -->
+      <div class="image-container">
+        <div>
+            <img src="images/baba.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/abou amma.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/saleh.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/a1.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/temoignage.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="pied">
+            <span>🗂️Page: Zénith Agricole</span>
+            <span>🏠N'Djamena, Chad</span>
+            <span>📞+235 66 65 10 11</span>
+            <span>📩younoussousmane01@gmail.com</span>
+            <span>💻Vente des produits Agricoles</span>
+        </div> 
+    </footer>
+</body>
+</html>

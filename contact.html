@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Zenith Agricole</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styles pour le header */
+        header {
+            width: 100%;
+            background-color: #38b6ff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navigation nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        /* Conteneur du formulaire de contact */
+        .contact-container {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        /* Titre principal du formulaire */
+        h1 {
+            text-align: center;
+            color: #38b6ff;
+            margin-bottom: 30px;
+        }
+
+        /* Champs de formulaire */
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        /* Bouton d'envoi */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #38b6ff;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1f8dcf;
+        }
+
+        /* Message de confirmation ou d'erreur */
+        .status {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .success {
+            color: #28a745;
+        }
+
+        .error {
+            color: #dc3545;
+        }
+
+
+        /* Section pour la carte */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+        .pied {
+    background-color: #d2d2bc; 
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center; 
+    font-size: 16px; 
+    line-height: 2; /* Hauteur de ligne */
+    color: black;
+    margin-top: 20px;
+    margin-left: 330px;
+    margin-right: 330px;
+}
+
+.pied:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navigation">
+            <nav><a href="index.html">ACCUEIL</a></nav>
+            <nav><a href="produit.html">PRODUITS</a></nav>
+            <nav><a href="contact.html">CONTACT</a></nav>
+        </div>
+    </header>
+
+    <!-- Conteneur du formulaire -->
+    <div class="contact-container">
+        <h1>Contactez-nous</h1>
+        <form action="#" method="POST">
+            <!-- Nom -->
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <!-- Email -->
+            <input type="email" name="email" placeholder="Votre email" required>
+            <!-- Téléphone -->
+            <input type="tel" name="telephone" placeholder="Votre numéro de téléphone" required>
+            <!-- Message -->
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <!-- Bouton de soumission -->
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+
+     <!-- Section de la carte Google Maps -->
+     <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093845!2d144.953736315589!3d-37.817209879751664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727d3f8a2edab!2sZenith+Agricole!5e0!3m2!1sen!2sfr!4v1600000000000!5m2!1sen!2sfr" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0"></iframe>
+    </div>
+    <footer>
+        <div class="pied">
+            <span>🗂️Page: Zénith Agricole</span>
+            <span>🏠N'Djamena, Chad</span>
+            <span>📞+235 66 65 10 11</span>
+            <span>📩younoussousmane01@gmail.com</span>
+            <span>💻Vente des produits Agricoles</span>
+        </div> 
+    </footer>
+</body>
+</html>
+
+
+
